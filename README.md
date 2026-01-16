@@ -8,7 +8,6 @@
 ├── main.py                # Точка входа, запуск aiogram-бота, регистрация роутеров и middlewares
 ├── requirements.txt       # Зависимости проекта
 ├── Dockerfile             # Описание контейнера для запуска в Docker
-├── foodtrack, foodtrack.pub  # (служебные/вспомогательные файлы, если есть)
 ├── database/
 │   ├── engine.py          # Инициализация асинхронного движка SQLAlchemy и сессий
 │   ├── models.py          # Описание ORM-моделей: User, WaterLog, FoodLog, WorkoutLog, DailyStats
