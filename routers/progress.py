@@ -18,7 +18,6 @@ from database.models import User, WaterLog, FoodLog, WorkoutLog, DailyStats
 from database.utils import get_or_create_daily_stats
 
 load_dotenv()
-ACCESS_TOKEN = os.getenv("FATSECRET_ACCESS_TOKEN")
 
 progress_router = Router()
 
@@ -203,6 +202,7 @@ async def log_food(message: Message, state: FSMContext, session: AsyncSession):
                 )
                 
     except Exception as e:
+        print(e)
         await message.answer(f'❌ Ошибка при поиске продукта: {str(e)}')
 
 
